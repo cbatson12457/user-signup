@@ -104,5 +104,5 @@ def verify_all(form, uname, password, verify, email, matched):
     return "SUCCESS"
   # if one input fails to meet the conditions, display error and allow reentry
   else:
-    content = form + " " + uname + " " + password + " " + verify + " " + matched + " " + email + " "
+    content = form + '<div id="error">' + uname + " " + password + " " + verify + " " + matched + " " + email + "</div>"
     return content
